@@ -20,7 +20,20 @@
 <div class="container-fluid">      
 <div class="sidebar">
 <table class="bordered-table"><tr><td>
-<img src="@{'/public/images/Capture.png'}"   height="80%" width="50%" /><BR><br><br>    
+<img src="@{'/public/images/Capture.png'}"   height="80%" width="50%" /><BR><br><br>  
+<script type="text/javascript">
+
+var c = 0;
+function Click(){
+document.getElementById('c').value = ++c;
+
+}
+
+document.write('<input type="button" class="btn" onclick="Click()" value="Like">');
+
+c=0;
+</script>
+<input id="c" class="span1" value="0">
     </td></tr><tr><td><br>
   <b> <font color="brown">Our Widgets:</font>  </b>  <br>
    <marquee  scrollamount="2" direction="left" loop="true" width="100%" onmouseover="this.stop()" onmouseout="this.start()"> 
